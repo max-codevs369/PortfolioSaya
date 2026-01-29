@@ -96,7 +96,7 @@ export const ContactSection = () => {
               <h4 className="font-medium mb-4 text-center">Terhubung dengan Saya</h4>
               <div className="flex space-x-6 justify-center text-primary">
                 <a
-                  href="https://www.instagram.com/zeeeeelllxxyz"
+                  href="https://www.instagram.com/ganzeventeen"
                   target="_blank"
                   className="hover:text-primary/80 transition"
                 >
