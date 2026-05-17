@@ -7,6 +7,13 @@ export const AboutSection = () => {
   const { toast } = useToast();
   const [isSending, setIsSending] = useState(false);
 
+  const handleDownloadClick = () => {
+    setIsSending(true);
+    setTimeout(() => {
+      setIsSending(false);
+    }, 2000);
+  };
+
   return (
     <section id="about" className="py-24 px-4 relative">
       <div className="container mx-auto max-w-5xl">
@@ -39,10 +46,12 @@ export const AboutSection = () => {
               </a>
 
               <a
-                href="/public/cv/Profile.pdf"
+                href="/cv/profile.pdf" 
                 download="CV_Gani_Gustio.pdf"
+                onClick={handleDownloadClick}
                 className={cn(
-                  "px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
+                  "px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300 text-center inline-flex items-center justify-center",
+                  isSending && "opacity-50 pointer-events-none"
                 )}
               >
                 {isSending ? "Mengunduh..." : "Unduh CV"}
