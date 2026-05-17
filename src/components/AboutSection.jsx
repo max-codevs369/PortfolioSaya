@@ -7,18 +7,6 @@ export const AboutSection = () => {
   const { toast } = useToast();
   const [isSending, setIsSending] = useState(false);
 
-  const handleDownloadCV = () => {
-    setIsSending(true);
-    setTimeout(() => {
-      toast({
-        title: "CV Belum Tersedia",
-        description:
-          "CV saya masih dalam proses pembuatan. Silakan hubungi saya melalui kontak untuk info lebih lanjut.",
-      });
-      setIsSending(false);
-    }, 500);
-  };
-
   return (
     <section id="about" className="py-24 px-4 relative">
       <div className="container mx-auto max-w-5xl">
@@ -50,15 +38,15 @@ export const AboutSection = () => {
                 Hubungi Saya
               </a>
 
-              <button
-                onClick={handleDownloadCV}
-                disabled={isSending}
+              <a
+                href="/public/cv/Profile.pdf"
+                download="CV_Gani_Gustio.pdf"
                 className={cn(
                   "px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
                 )}
               >
-                {isSending ? "Memproses..." : "Unduh CV"}
-              </button>
+                {isSending ? "Mengunduh..." : "Unduh CV"}
+              </a>
             </div>
           </div>
 
