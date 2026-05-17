@@ -7,6 +7,7 @@ const skills = [
   { name: "React", level: 90, category: "frontend" },
   { name: "TypeScript", level: 85, category: "frontend" },
   { name: "Tailwind CSS", level: 90, category: "frontend" },
+  { name: "Bootstrap", level: 85, category: "frontend"},
   { name: "Next.js", level: 80, category: "frontend" },
 
   { name: "Laravel", level: 95, category: "backend" },
@@ -14,15 +15,14 @@ const skills = [
   { name: "Node.js", level: 85, category: "backend" },
   { name: "MySQL", level: 95, category: "backend" },
 
-  { name: "Java (Desktop Apps)", level: 95, category: "desktop" },
-  { name: "C# (Windows Apps)", level: 90, category: "desktop" },
+  { name: "Java", level: 95, category: "desktop" },
+  { name: "C#", level: 90, category: "desktop" },
 
   { name: "Git & GitHub", level: 90, category: "tools" },
   { name: "VS Code", level: 95, category: "tools" },
   { name: "Visual Studio", level: 90, category: "tools" },
   { name: "Netbeans IDE", level: 95, category: "tools"},
   { name: "Netlify / Vercel", level: 95, category: "tools" },
-  { name: "Canva", level: 90, category: "tools" },
 ];
 
 const categories = ["Semua", "frontend", "backend", "desktop", "tools"];
