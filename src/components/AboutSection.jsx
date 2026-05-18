@@ -12,6 +12,7 @@ export const AboutSection = () => {
     setTimeout(() => {
       setIsSending(false);
     }, 2000);
+    
   };
 
   return (
